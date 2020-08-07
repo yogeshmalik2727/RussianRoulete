@@ -29,7 +29,7 @@ namespace RussianRoulete
             player.Play();
             textBox1.Text = SettingObj.Point + "";
             SettingObj.ShootAtHead();
-            ShootAway.Enabled = false;
+            //ShootAway.Enabled = false;
             ShootAtHead.Enabled = true;
             PlayAgain.Enabled = true;
 
@@ -42,7 +42,7 @@ namespace RussianRoulete
             SettingObj.ShootAway();
            
             ShootAway.Enabled = true;
-            ShootAtHead.Enabled = false;
+            //ShootAtHead.Enabled = false;
             PlayAgain.Enabled = true;
 
         }

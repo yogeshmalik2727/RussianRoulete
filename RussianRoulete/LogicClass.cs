@@ -30,17 +30,23 @@ namespace RussianRoulete
 
         public void ShootAway()
         {
-            if (Bullet == 5)
+            if (ShootAwayChances > 0)
             {
-                MessageBox.Show("Alive");
-                Point = Point + 5;
+                if (Bullet == 5)
+                {
+                    MessageBox.Show("Alive");
+                    Point = Point + 5;
+                }
+                else
+                {
+                    MessageBox.Show("Continue");
+                    Bullet++;
+                    ShootAwayChances--;
+                }
             }
             else
             {
-                MessageBox.Show("lost all chances");
-                Bullet++;
-                ShootAwayChances--;
-
+                MessageBox.Show("You will be dead");
             }
         }
     }
